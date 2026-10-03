@@ -1,0 +1,4 @@
+theia@theiadocker-enriquetron:/home/project/final_project$ python3.11 -c "from  emotion_detection import emotion_detector; emotion_detector('i love this new technology');"
+theia@theiadocker-enriquetron:/home/project/final_project$ python3.11 -c "from  emotion_detection import emotion_detector; emotion_detector('i love this new technology');"
+[{'emotion': {'anger': 0.0132405795, 'disgust': 0.0020517302, 'fear': 0.009090992, 'joy': 0.9699522, 'sadness': 0.054984167}, 'target': '', 'emotionMentions': [{'span': {'begin': 0, 'end': 26, 'text': 'i love this new technology'}, 'emotion': {'anger': 0.0132405795, 'disgust': 0.0020517302, 'fear': 0.009090992, 'joy': 0.9699522, 'sadness': 0.054984167}}]}]
+theia@theiadocker-enriquetron:/home/project/final_project$ 
