@@ -18,13 +18,13 @@ def sent_analyzer():
         score for the provided text.
     '''
     texto = request.args.get('textToAnalyze','')
-    emotions = emotion_detector(texto)['text']
-    dominant_emotion = max(emotions, key=emotions.get)
+    emotions = emotion_detector(texto)
+    dominant_emotion = emotions['dominant_emotion']
     if dominant_emotion=='text':
         msg = "Invalid text! Please try again!."
     else:
         msg =(
-            f"This is the full response {emotions}"
+            f"For the given statement, the system response is {emotions}"
             f" but the dominant emotion is {dominant_emotion}"
         )
     return msg
