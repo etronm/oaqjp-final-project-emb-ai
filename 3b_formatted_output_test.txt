@@ -1,3 +1,8 @@
 theia@theiadocker-enriquetron:/home/project/final_project$ python3.11 -c "from  emotion_detection import emotion_detector; emotion_detector('i love this new technology');"
 {'anger': 0.0132405795, 'disgust': 0.0020517302, 'fear': 0.009090992, 'joy': 0.9699522, 'sadness': 0.054984167}
 theia@theiadocker-enriquetron:/home/project/final_project$ 
+
+############
+theia@theiadocker-enriquetron:/home/project/final_project$ python3 -c "import emotion_detection;emotion_detection.emotion_detector('I am so happy I am doing this');"
+{'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322, 'dominant_emotion': 'joy'}
+theia@theiadocker-enriquetron:/home/project/final_project$ 
