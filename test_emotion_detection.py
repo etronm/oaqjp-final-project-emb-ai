@@ -1,11 +1,23 @@
 from EmotionDetection.emotion_detection import emotion_detector
 import unittest
 
-def test_emotion_detector():
-    testJoy = emotion_detector('I am glad this happened')
-    testAnger = emotion_detector('I am really mad about this')
-    testDisgust = emotion_detector('I feel disgusted just hearing about this')
-    testSadness = emotion_detector('I am so sad about this')
-    testFear = emotion_detector('I am really afraid that this will happen')
-    ok = 'joy' in testJoy['text'] and 'anger' in testAnger['text'] and 'disgust' in testDisgust['text'] and 'sadness' in testSadness['text'] and 'fear' in testFear['text'] 
-    print(f"Is ok {ok}")
+class TestEmotionDetector(unittest.TestCase):
+    def test_emotion_analyzer(self):
+        result = emotion_detector('I am glad this happened')
+        self.assertEqual(result['dominant_emotion'], 'joy') 
+
+        result = emotion_detector('I am really mad about this')
+        self.assertEqual(result['dominant_emotion'], 'anger') 
+
+        result = emotion_detector('I feel disgusted just hearing about this')
+        self.assertEqual(result['dominant_emotion'], 'disgust') 
+
+        result = emotion_detector('I am so sad about this')
+        self.assertEqual(result['dominant_emotion'], 'sadness') 
+
+        result = emotion_detector('I am really afraid that this will happen')
+        self.assertEqual(result['dominant_emotion'], 'fear') 
+
+if __name__ == '__main__':
+    unittest.main()
+
