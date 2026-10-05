@@ -3,10 +3,10 @@ theia@theiadocker-enriquetron:/home/project/final_project$ python3.11 -c "from E
 theia@theiadocker-enriquetron:/home/project/final_project$ 
 
 #############
-theia@theiadocker-enriquetron:/home/project/final_project$ python3
-Python 3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0] on linux
+theia@theiadocker-enriquetron:/home/project/final_project$ python3.11
+Python 3.11.15 (main, Mar  3 2026, 09:26:23) [GCC 11.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> from EmotionDetection import emotion_detector
->>> emotion_detector('I hate working long hours.')
+>>> import EmotionDetection.emotion_detection
+>>> EmotionDetection.emotion_detector('I hate working long hours.')
 {'anger': 0.64999825, 'disgust': 0.03349073, 'fear': 0.05567236, 'joy': 0.008661813, 'sadness': 0.19678932, 'dominant_emotion': 'anger'}
 >>> 

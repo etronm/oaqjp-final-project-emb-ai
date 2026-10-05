@@ -37,12 +37,12 @@ def emotion_detector(text_to_analyse):
     else:
         if response.status_code == 400:
             emotions_dict = {
-                'anger':'None',
-                'disgust':'None',
-                'fear':'None',
-                'joy':'None',
-                'sadness':'None',
-                'dominant_emotion':'None'
+                'anger':None,
+                'disgust':None,
+                'fear':None,
+                'joy':None,
+                'sadness':None,
+                'dominant_emotion':None
             }
 
     #print(emotions_dict)
